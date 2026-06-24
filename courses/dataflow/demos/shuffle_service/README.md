@@ -28,7 +28,9 @@ BUCKET=gs://$PROJECT_ID-df-demo
 gcloud storage buckets create --location=us-central1 $BUCKET
 bq mk --location=US dataflow_demos
 ```
-
+And then run following command:
+pip install --user --upgrade "apache-beam[gcp]"
+-----
 Run the first pipeline using Dataflow Shuffle service in Cloud Shell (or your development envrionment) using the following command
 
 ```bash
